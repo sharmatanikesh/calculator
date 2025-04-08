@@ -38,6 +38,8 @@ export default function AdvanceCalculator() {
       }
 
       const data = await response.json();
+      //Checking the integration
+      console.log("Data for debuggin:",data);
 
       if (data.error) {
         throw new Error(data.error);
